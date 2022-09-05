@@ -47,6 +47,13 @@
             padding: 40px;
         }
 
+        .proceed_to_order{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
 
       </style>
    </head>
@@ -59,7 +66,12 @@
         
          <!-- end slider section -->
      
-         
+         @if(session()->has('message'))
+                    <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                    <button type=button class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                    </div>
+                @endif
      
       <div class="center">
         <table>
@@ -91,8 +103,16 @@
 
         <div>
             <h1 class="total_deg">
-                Total Price: {{ $totalprice }}
+                Total Price: ${{ $totalprice }}
             </h1>
+        </div>
+      </div>
+
+      <div class="proceed_to_order">
+        <h1 style="font-size: 24px; padding-bottom: 15px;">Proceed to Order</h1>
+        <div>
+            <a href="{{ url('cash_order') }}" class="btn btn-danger">Cash On Delivery</a>
+            <a href="" class="btn btn-danger">Pay Using Card</a>
         </div>
       </div>
 
