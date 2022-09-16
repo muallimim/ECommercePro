@@ -43,6 +43,8 @@ Route::post("/update_product_confirm/{id}", [AdminController::class, "update_pro
 Route::get("/order", [AdminController::class, "order"]);
 Route::get("/delivered/{id}", [AdminController::class, "delivered"]);
 Route::get("/print_pdf/{id}", [AdminController::class, "print_pdf"]);
+Route::get("/send_email/{id}", [AdminController::class, "send_email"]);
+Route::post("/send_user_email/{id}", [AdminController::class, "send_user_email"]);
 
 Route::post("/add_cart/{id}", [HomeController::class, "add_cart"]);
 Route::get("/show_cart", [HomeController::class, "show_cart"]);
