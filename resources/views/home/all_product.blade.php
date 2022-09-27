@@ -23,7 +23,6 @@
       <!-- responsive style -->
       <link href="{{ asset('home/css/responsive.css" rel="stylesheet') }}" />
 
-      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       
    </head>
@@ -32,20 +31,13 @@
          <!-- header section strats -->
          @include('home.header')
          <!-- end header section -->
-         <!-- slider section -->
-         @include("home.slider")
-         <!-- end slider section -->
-      </div>
-      <!-- why section -->
-      @include("home.why")
-      <!-- end why section -->
+        
+         
 
-      <!-- arrival section -->
-      @include("home.arrival")
-      <!-- end arrival section -->
+      
 
       <!-- product section -->
-      @include("home.product")
+      @include("home.product_view")
       <!-- end product section -->
 
       <!-- Comment and reply system starts here-->
@@ -110,15 +102,8 @@
 
       <!-- Comment and reply system ends  here-->
 
-      <!-- subscribe section -->
-      @include("home.subscribe")
-      <!-- end subscribe section -->
-      <!-- client section -->
-      @include("home.client")
-      <!-- end client section -->
-      <!-- footer start -->
-      @include("home.footer")
-      <!-- footer end -->
+      
+      
       <div class="cpy_">
          <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
 
